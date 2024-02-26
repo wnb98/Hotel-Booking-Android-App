@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textViewinfo"
+        android:layout_width="381dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="-36dp"
+        android:text="Please choose the dates and the number of gusts."
+        android:textColor="@color/oteldarkblue"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dateRangeText"
+        android:layout_width="347dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/textViewinfo"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="33dp"
+        android:background="@drawable/custom_search_view"
+        android:nextFocusForward="@id/guestsTextView"
+        android:padding="10dp"
+        android:paddingEnd="10dp"
+        android:text="Select date"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/guestsTextView"
+        android:layout_width="347dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/dateRangeText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="33dp"
+        android:background="@drawable/custom_search_view"
+        android:padding="10dp"
+        android:text="Select number of guests"
+        android:textSize="18sp"
+        android:nextFocusForward="@id/etCardNumber"/>
+
+
+    <TextView
+        android:id="@+id/infotextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/guestsTextView"
+        android:textColor="@color/oteldarkblue"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Enter your payment information for:"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/totalTXT"
+        android:layout_width="348dp"
+        android:layout_height="98dp"
+        android:layout_below="@+id/infotextview"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="30dp"
+
+        android:textSize="20dp"
+
+
+        />
+
+
+    <!-- زر الدفع -->
+
+
+    <EditText
+        android:id="@+id/etCardNumber"
+        android:layout_width="347dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/chkAgree"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginBottom="76dp"
+        android:background="@drawable/custom_search_view"
+        android:drawableEnd="@drawable/visa"
+        android:hint="Card Number"
+        android:inputType="number"
+        android:maxLength="16"
+        android:imeOptions="actionNext"
+        android:paddingEnd="10dp"
+        android:textColorHint="@color/grey_font" />
+
+    <EditText
+        android:id="@+id/etExpirationMonth"
+        android:layout_width="65dp"
+        android:layout_height="44dp"
+        android:layout_above="@+id/chkAgree"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="21dp"
+        android:layout_weight="1"
+        android:background="@drawable/custom_search_view"
+        android:hint="MM /"
+        android:inputType="number"
+        android:maxLength="2"
+        android:imeOptions="actionNext"
+        android:textColorHint="@color/grey_font"
+        />
+
+
+    <EditText
+        android:id="@+id/etExpirationYear"
+        android:layout_width="65dp"
+        android:layout_height="44dp"
+        android:layout_above="@+id/chkAgree"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="21dp"
+        android:layout_toStartOf="@+id/etCvv"
+        android:layout_weight="1"
+        android:background="@drawable/custom_search_view"
+        android:hint="YY"
+        android:inputType="number"
+        android:maxLength="2"
+        android:nextFocusForward="@id/etCvv"
+        android:imeOptions="actionNext"
+        android:textColorHint="@color/grey_font" />
+
+    <EditText
+        android:id="@+id/etCvv"
+        android:layout_width="80dp"
+        android:layout_height="44dp"
+        android:layout_above="@+id/chkAgree"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="21dp"
+        android:layout_weight="1"
+        android:background="@drawable/custom_search_view"
+        android:hint="CVV"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textColorHint="@color/grey_font" />
+
+    <CheckBox
+        android:id="@+id/chkAgree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnPay"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="10dp"
+        android:buttonTint="@color/otelblue"
+        android:text="I agree to the privacy policy and terms of use" />
+
+    <Button
+        android:id="@+id/btnPay"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/custom_btn"
+        android:elevation="3dp"
+        android:text="ِEnter for payment"
+        android:textColor="#44545D"
+        android:textSize="16dp" />
+
+</RelativeLayout>

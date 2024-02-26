@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground"
+    tools:context=".MainActivityLogin" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="176dp"
+        android:layout_marginBottom="444dp"
+        android:text="LOGIN"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/oteldarkblue"/>
+
+    <EditText
+        android:id="@+id/loginEmailTXT"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="-74dp"
+        android:background="@drawable/customedittext"
+        android:drawableStart="@drawable/emailicon"
+        android:drawablePadding="13dp"
+        android:elevation="3dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        android:textColor="@color/oteldarkblue"
+        android:textColorHint="#A2A9AC" />
+
+    <EditText
+        android:id="@+id/loginPassTXT"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@+id/loginEmailTXT"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="-84dp"
+        android:background="@drawable/customedittext"
+        android:drawableStart="@drawable/passwordicon"
+        android:drawablePadding="13dp"
+        android:elevation="3dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:maxLength="8"
+        android:paddingStart="10dp"
+        android:textColor="@color/oteldarkblue"
+        android:textColorHint="#A2A9AC" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/loginPassTXT"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="-35dp"
+        android:text="Forget Password?"
+        android:textColor="#A2A9AC"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/loginPassTXT"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="202dp"
+        android:layout_marginBottom="-147dp"
+        android:text="Or"
+        android:textColor="#A2A9AC"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginBTN"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@+id/loginPassTXT"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="-116dp"
+        android:background="@drawable/custom_btn"
+        android:elevation="3dp"
+        android:text="Login"
+        android:textColor="#44545D"
+        android:textSize="19dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signupBTN"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@+id/loginPassTXT"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="-211dp"
+        android:background="@drawable/costom_signup_btn"
+        android:elevation="3dp"
+        android:text="Sign Up"
+        android:textColor="#A5CCDD"
+        android:textSize="19dp" />
+
+    <!-- TODO: Update blank fragment layout
+    <Button
+        android:id="@+id/forTryBTN"
+        android:layout_width="194dp"
+        android:layout_height="66dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="113dp"
+        android:layout_marginBottom="488dp"
+        android:text="For Try"/>
+-->
+
+</RelativeLayout>
